@@ -1,10 +1,11 @@
 import React from 'react';
-import {Button } from '@mui/material';
+import UserProfile from './components/UserProfile';
+
 
 function App() {
   return (
     <div>
-      <Button variant="contained" color="primary">Login</Button>
+      <UserProfile />
     </div>
   );
 }
