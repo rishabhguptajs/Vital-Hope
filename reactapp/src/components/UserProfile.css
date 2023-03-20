@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
     background-color: #ececec;
 }
 .UserProfileCard {
     position: relative;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
     top: 5em;
     left: 8%;
     display: flex;
@@ -11,14 +14,14 @@ body{
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 20%;
-    height: 100px;
+    width: 23%;
+    height: 120px;
     background-color: #328bff;
     color: #d0e5ff;
     overflow-x: hidden;
     flex-direction: column;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 18px;
+    border-radius: 28px;
 }
   
 .Card {
@@ -29,7 +32,14 @@ body{
 }
 .age{
     position: relative;
-    left: -1.5%;
+    left: -3%;
     top: -2.5em;
     font-size: 12px;
+}
+.bottom_Card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+    color: #acd0ff;
 }
