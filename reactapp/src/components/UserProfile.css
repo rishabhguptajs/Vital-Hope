@@ -15,7 +15,7 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
     width: 23%;
-    height: 120px;
+    height: 150px;
     background-color: #328bff;
     color: #d0e5ff;
     overflow-x: hidden;
@@ -38,8 +38,26 @@ body{
 }
 .bottom_Card{
     display: flex;
-    align-items: center;
-    flex-direction: row;
+    position: relative;
+    top: -22.5%;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 15px;
     color: #acd0ff;
+    font-weight: bold;
+}
+.height,
+.weight,
+.bloodType {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+.height:after{
+  content: " cm";
+}
+.weight:after {
+  content: " kg";
+} 
+.bloodType:after {
+    content: " ";
 }
