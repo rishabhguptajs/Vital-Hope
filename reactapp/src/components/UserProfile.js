@@ -38,12 +38,15 @@ class UserProfile extends Component {
               <div className='bottom_Card'>
                 <span className='height'>
                   Height &nbsp; &nbsp; 
+                  {this.state.height}
                 </span>
                 <span className='weight'>
                   Weight &nbsp; &nbsp; 
+                  {this.state.weight}
                 </span>
                 <span className='bloodType'>
                   Blood Group 
+                  {this.state.bloodType}
                 </span>
               </div>
           </div>
