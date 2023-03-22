@@ -3,7 +3,6 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import './UserProfile.css'
 
-
 class UserProfile extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +13,7 @@ class UserProfile extends Component {
       gender: 'M',
       location: 'Ghaziabad',
       height: '175',
-      weight: '70',
+      weight: '60',
       bloodType: 'A+',
       bloodSugar: '100',
       bloodPressure: '130/80',
