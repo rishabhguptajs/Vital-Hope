@@ -3,6 +3,7 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import './UserProfile.css'
 
+
 class UserProfile extends Component {
   constructor(props) {
     super(props);
