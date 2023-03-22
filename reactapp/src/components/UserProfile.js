@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 import './UserProfile.css'
 
 
@@ -18,10 +22,18 @@ class UserProfile extends Component {
       bloodType: 'A+',
       bloodSugar: '100',
       bloodPressure: '130/80',
+      phoneNumber:'9889069688'
     };
   }
 
   render() {  
+    const Item = styled(Paper)(({ theme }) => ({
+      backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+      ...theme.typography.body2,
+      padding: theme.spacing(1),
+      textAlign: 'center',
+      color: theme.palette.text.secondary,
+    }));
     return (
       <div>
         <div className="ProfileCard">
@@ -49,6 +61,18 @@ class UserProfile extends Component {
                   {this.state.bloodType}
                 </span>
               </div>
+          </div>
+          <div className="UserInfo">
+            <Box sx={{ flexGrow: 1 }} className="BoxCardInfo">
+              <Grid container spacing={2}>
+                <Grid item xs={8} className="CardInfo">
+                  <Item>Phone Number</Item>
+                </Grid>
+                <Grid item xs={8} className="CardInfo">
+                  <Item>{this.state.phoneNumber}</Item>
+                </Grid>
+              </Grid>
+            </Box>
           </div>
         </div>
       </div>

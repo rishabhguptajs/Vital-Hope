@@ -2,33 +2,51 @@
 body{
     background-color: #ececec;
 }
-.UserProfileCard {
+.ProfileCard{
     position: relative;
+    top: 6em;
+    left:6em;
+    display: flex;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    width: 70%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.UserProfileCard {
+    /* position: relative; */
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
-    top: 5em;
-    left: 8%;
+    /* top: 5em; */
+    /* left: 8%; */
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 23%;
+    width: 17em;
     height: 150px;
-    background-color: #328bff;
-    color: #d0e5ff;
+    background-color: white;
+    color: #91c2ff;
     overflow-x: hidden;
     flex-direction: column;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 28px;
 }
-  
+.UserProfileCard:hover{
+    background-color: #2a86ff;
+    box-shadow: 10px 10px 36px -6px rgba(176,197,255,1);
+    transition: ease-out 0.5s;
+    transform: translateZ(0);
+    cursor: pointer;
+    scale: 1.04;
+}
 .Card {
     /* margin-left: 55px; */
     font-size: 20px;
     font-weight: 600;
-    color: #F5F9FE;
+    color: #aed3ff;
 }
 .age{
     position: relative;
@@ -59,3 +77,17 @@ body{
 .weight:after {
   content: " kg";
 } 
+.BoxCardInfo{
+  height: 100px;
+  width: 200px;
+  margin-right: 150px;
+}
+.CardInfo{
+  border-radius: 10px;
+}
+.CardInfo:hover{
+  transition: ease-out 0.3s;
+  transform: translateZ(0);
+  cursor: pointer;
+  scale: 1.04;
+}
