@@ -45,7 +45,7 @@ class UserProfile extends Component {
                   {this.state.weight}
                 </span>
                 <span className='bloodType'>
-                  Blood Group 
+                  Blood Group &nbsp; &nbsp;
                   {this.state.bloodType}
                 </span>
               </div>

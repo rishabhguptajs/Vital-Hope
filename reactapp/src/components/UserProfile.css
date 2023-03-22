@@ -58,6 +58,3 @@ body{
 .weight:after {
   content: " kg";
 } 
-.bloodType:after {
-    content: " ";
-}
