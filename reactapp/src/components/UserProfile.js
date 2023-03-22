@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import './UserProfile.css'
 
@@ -22,7 +21,7 @@ class UserProfile extends Component {
     };
   }
 
-  render() {
+  render() {  
     return (
       <div>
         <div className="ProfileCard">
@@ -39,15 +38,12 @@ class UserProfile extends Component {
               <div className='bottom_Card'>
                 <span className='height'>
                   Height &nbsp; &nbsp; 
-                  {this.state.height} cm
                 </span>
                 <span className='weight'>
                   Weight &nbsp; &nbsp; 
-                  {this.state.weight} kg
                 </span>
                 <span className='bloodType'>
                   Blood Group 
-                  {this.state.bloodType} 
                 </span>
               </div>
           </div>
