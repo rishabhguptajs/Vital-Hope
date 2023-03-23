@@ -65,11 +65,11 @@ class UserProfile extends Component {
           <div className="UserInfo">
             <Box sx={{ flexGrow: 1 }} className="BoxCardInfo">
               <Grid container spacing={2}>
-                <Grid item xs={8} className="CardInfo">
+                <Grid item xs={8} className="UserPhone">
                   <Item>Phone Number</Item>
+                  <p>&nbsp;&nbsp;&nbsp;{this.state.phoneNumber}</p>
                 </Grid>
                 <Grid item xs={8} className="CardInfo">
-                  <Item>{this.state.phoneNumber}</Item>
                 </Grid>
               </Grid>
             </Box>

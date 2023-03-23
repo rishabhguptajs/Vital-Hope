@@ -82,10 +82,10 @@ body{
   width: 200px;
   margin-right: 150px;
 }
-.CardInfo{
+.UserPhone{
   border-radius: 10px;
 }
-.CardInfo:hover{
+.UserPhone:hover{
   transition: ease-out 0.3s;
   transform: translateZ(0);
   cursor: pointer;
