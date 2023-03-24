@@ -1,10 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 body{
     background-color: #ececec;
 }
+.navBarProfile{
+  display: flex;
+  flex-direction: row;
+  height: 4em;
+  position: static;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #ffbbbb; */
+}
+.ButtonBack{
+  position: absolute;
+  left: 3.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15em;
+  font-size: 19px;
+  color: #2a86ff;
+  font-weight: 600;
+  justify-content: space-evenly;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: default;
+  /* background-color: #aed3ff; */
+}
+#backButton{
+  height: 35px;
+  width: 80px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
 .ProfileCard{
     position: relative;
-    top: 6em;
+    top: 4em;
     left:6em;
     display: flex;
     border-radius: 20px;
@@ -27,20 +61,21 @@ body{
     padding-bottom: 15px;
     width: 17em;
     height: 150px;
-    background-color: white;
+    background-color: #2a86ff;
     color: #91c2ff;
     overflow-x: hidden;
     flex-direction: column;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 28px;
+    border-radius: 10px;
 }
 .UserProfileCard:hover{
     background-color: #2a86ff;
     box-shadow: 10px 10px 36px -6px rgba(176,197,255,1);
-    transition: ease-out 0.5s;
+    transition: ease-out 0.2s;
     transform: translateZ(0);
     cursor: pointer;
-    scale: 1.04;
+    scale: 1.02;
+    border-radius: 30px;
 }
 .Card {
     /* margin-left: 55px; */
@@ -78,11 +113,11 @@ body{
   content: " kg";
 } 
 .BoxCardInfo{
-  height: 11em;
+  height: 11.25em;
   width: 38em;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  /* background-color: #acd0ff; */
+  /* background-color: #acd0ff;  */
   /* margin-right: 150px; */
   display: flex;
   flex-direction: column;
