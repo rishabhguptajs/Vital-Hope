@@ -1,0 +1,9 @@
+.more_nav {
+    position: absolute;
+    left: -4rem;
+}
+
+.home-bg {
+    background-image: url("image/home.png");
+    background-size: contain;
+   }
