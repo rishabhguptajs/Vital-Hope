@@ -78,14 +78,20 @@ body{
   content: " kg";
 } 
 .BoxCardInfo{
-  height: 100px;
-  width: 200px;
-  margin-right: 150px;
+  height: 11em;
+  width: 38em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* background-color: #acd0ff; */
+  /* margin-right: 150px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .UserPhone{
   border-radius: 10px;
 }
-.UserPhone:hover{
+.CardInfo:hover{
   transition: ease-out 0.3s;
   transform: translateZ(0);
   cursor: pointer;

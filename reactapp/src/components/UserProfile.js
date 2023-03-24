@@ -22,11 +22,15 @@ class UserProfile extends Component {
       bloodType: 'A+',
       bloodSugar: '100',
       bloodPressure: '130/80',
-      phoneNumber:'9889069688'
+      countryCode : '+91',
+      phoneNumber:'9889069688',
+      email: 'rishabhgupta4523@gmail.com',
+      passportNumber: '1234567890',
+      medicalConditions: 'Cough, Cold'
     };
   }
 
-  render() {  
+  render() {
     const Item = styled(Paper)(({ theme }) => ({
       backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
       ...theme.typography.body2,
@@ -63,15 +67,7 @@ class UserProfile extends Component {
               </div>
           </div>
           <div className="UserInfo">
-            <Box sx={{ flexGrow: 1 }} className="BoxCardInfo">
-              <Grid container spacing={2}>
-                <Grid item xs={8} className="UserPhone">
-                  <Item>Phone Number</Item>
-                  <p>&nbsp;&nbsp;&nbsp;{this.state.phoneNumber}</p>
-                </Grid>
-                <Grid item xs={8} className="CardInfo">
-                </Grid>
-              </Grid>
+            <Box className="BoxCardInfo">
             </Box>
           </div>
         </div>
