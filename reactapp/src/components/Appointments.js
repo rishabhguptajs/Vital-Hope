@@ -1,78 +1,61 @@
-import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import * as React from "react";
+import TextField from "@mui/material/TextField";
+import Autocomplete from "@mui/material/Autocomplete";
+import Stack from "@mui/material/Stack";
+import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 
-const ITEM_HEIGHT = 48;
-const ITEM_PADDING_TOP = 8;
-const MenuProps = {
-  PaperProps: {
-    style: {
-      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
-      height: 100,
+export default function Playground() {
+  const StyledTextField = styled(TextField)({
+    color: "yellow",
+  });
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "#0077b6",
+      },
+      secondary: {
+        main: "#340500",
+      },
     },
-  },
-};
-
-const Appointments = [
-  'Cold and Flu',
-  'Allergies',
-  'Cough',
-  'Ear Infection',
-  'Eye Checkup',
-  'Fever',
-];
-
-function getStyles(name, personName, theme) {
-  return {
-    fontWeight:
-      personName.indexOf(name) === -1
-        ? theme.typography.fontWeightRegular
-        : theme.typography.fontWeightMedium,
+  });
+  const defaultProps = {
+    options: AppointmentsHistory,
+    getOptionLabel: (option) => option.title,
   };
-}
-
-export default function Appointment() {
-  const theme = useTheme();
-  const [personName, setPersonName] = React.useState([]);
-
-  const handleChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setPersonName(
-      typeof value === 'string' ? value.split(',') : value,
-    );
+  const flatProps = {
+    options: AppointmentsHistory.map((option) => option.title),
   };
+  const [value, setValue] = React.useState(null);
 
   return (
-    <div>
-      <FormControl sx={{ m: 1, width: 220 }}>
-        <InputLabel id="demo-multiple-name-label">Appointments History</InputLabel>
-        <Select
-          labelId="demo-multiple-name-label"
-          id="demo-multiple-name"
-          multiple
-          value={personName}
-          onChange={handleChange}
-          input={<OutlinedInput label="Name" />}
-          MenuProps={MenuProps}
-        >
-          {Appointments.map((name) => (
-            <MenuItem
-              key={name}
-              value={name}
-              style={getStyles(name, personName, theme)}
-            >
-              {name}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-    </div>
+    <Stack spacing={1} sx={{ width: 300 }}>
+      <ThemeProvider theme={theme}>
+        <Autocomplete
+          {...defaultProps}
+          id="disable-close-on-select"
+          disableCloseOnSelect
+          renderInput={(params) => (
+            <StyledTextField
+              {...params}
+              label="Appointments history"
+              variant="standard"
+            />
+          )}
+        />
+      </ThemeProvider>
+    </Stack>
   );
 }
+
+//get top 100 oldest hospitals list in the world
+const top100OldestHospitals = [
+  { title: "Hospital de la Santa Creu i Sant Pau", year: 1297 },
+  { title: "Hospital de la Santa Creu i Sant Pau", year: 1297 },
+  { title: "Hospital de la Santa Creu i Sant Pau", year: 1297 },
+  { title: "Hospital de la Santa Creu i Sant Pau", year: 1297 },
+]
+// Last 10 appoitments with the doctors
+const AppointmentsHistory = [
+  { title: "Dr. Maneesh Goyal", date: "12/12/2021", time: "12:00 PM" },
+  { title: "Dr. Sandeep Mishra", date: "17/12/2021", time: "2:00 PM" },
+];

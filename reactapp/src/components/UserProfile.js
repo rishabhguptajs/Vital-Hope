@@ -4,7 +4,6 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import "./UserProfile.css";
 import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
 import Appointment from "./Appointments";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
