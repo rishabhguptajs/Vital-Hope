@@ -3,7 +3,34 @@
     left: -4rem;
 }
 
-.home-bg {
-    background-image: url("image/home.png");
+.body {
+    position: absolute;
+    background-image: url("image/home-bg.png");
     background-size: contain;
-   }
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls-play-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls-overlay-play-button {
+    display: none !important;
+}
+
+video::-moz-media-controls-play-button {
+    display: none !important;
+}
+
+video::-moz-media-controls-overlay-play-button {
+    display: none !important;
+}
+
+video::-ms-media-controls-start-playback-button {
+    display: none !important;
+}
