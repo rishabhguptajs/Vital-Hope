@@ -4,7 +4,6 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import "./UserProfile.css";
 import Button from "@mui/material/Button";
-import Appointment from "./Appointments";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
 class UserProfile extends Component {
@@ -40,7 +39,6 @@ class UserProfile extends Component {
             <span>Patient Profile</span>
           </div>
           <div className="AppointmentInfo">
-            <Appointment />
           </div>
         </div>
         <div className="ProfileCard">
@@ -51,7 +49,6 @@ class UserProfile extends Component {
                 src="https://imgtr.ee/images/2023/03/20/qIWnl.jpg"
                 sx={{ width: 46, height: 46 }}
               />
-              <input hidden accept="image/*" type="file" />
               <p>{this.state.name} </p>
             </Stack>
             <p className="age">{this.state.age} years old</p>
@@ -69,7 +66,7 @@ class UserProfile extends Component {
                 {this.state.bloodType}
               </span>
             </div>
-          </div>
+           </div>
           <div className="UserInfo">
             <Box className="BoxCardInfo"></Box>
           </div>
