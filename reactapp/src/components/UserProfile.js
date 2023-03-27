@@ -33,7 +33,7 @@ class UserProfile extends Component {
       <div>
         <div className="navBarProfile">
           <div className="ButtonBack">
-            <Button variant="contained" startIcon={<KeyboardBackspaceIcon/>} size="small" id="backButton" >
+            <Button variant="contained" startIcon={<KeyboardBackspaceIcon/>}size="small" id="backButton" >
               Back
             </Button>
             <span>Patient Profile</span>
