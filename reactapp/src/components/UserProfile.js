@@ -73,7 +73,7 @@ class UserProfile extends Component {
             </div>
           </div>
           <div className="UserInfo">
-            {/* <Box className="BoxCardInfo">
+            <div className="BoxCardInfo">
               <Stack direction="row" spacing={2} className="InfoItems">
                 <span className="InfoHere">
                   Phone Number 
@@ -90,7 +90,7 @@ class UserProfile extends Component {
                   {this.state.passportNumber}
                 </span>
                 <span className="InfoHere">
-                  Medical Conditions
+                  Medical Conditions: &nbsp;
                   {this.state.medicalConditions}
                 </span>
                 <span className="InfoHere">
@@ -98,7 +98,7 @@ class UserProfile extends Component {
                   {this.state.cardNumber}
                 </span>
               </Stack>
-            </Box> */}
+            </div>
           </div>
         </div>
       </div>

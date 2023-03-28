@@ -133,9 +133,10 @@ body{
   scale: 1.04;
 }
 .UserInfo{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 10em;
+  position: relative;
+  left: -54%;
+  top: -2.1em;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
 }
