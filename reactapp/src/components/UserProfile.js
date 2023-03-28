@@ -25,6 +25,7 @@ class UserProfile extends Component {
       email: "rishabhgupta4523@gmail.com",
       passportNumber: "1234567890",
       medicalConditions: "Cough, Cold",
+      cardNumber: "1234567890123456",
     };
   }
 
@@ -33,13 +34,17 @@ class UserProfile extends Component {
       <div>
         <div className="navBarProfile">
           <div className="ButtonBack">
-            <Button variant="contained" startIcon={<KeyboardBackspaceIcon/>}size="small" id="backButton" >
+            <Button
+              variant="contained"
+              startIcon={<KeyboardBackspaceIcon />}
+              size="small"
+              id="backButton"
+            >
               Back
             </Button>
             <span>Patient Profile</span>
           </div>
-          <div className="AppointmentInfo">
-          </div>
+          <div className="AppointmentInfo"></div>
         </div>
         <div className="ProfileCard">
           <div className="UserProfileCard">
@@ -66,9 +71,34 @@ class UserProfile extends Component {
                 {this.state.bloodType}
               </span>
             </div>
-           </div>
+          </div>
           <div className="UserInfo">
-            <Box className="BoxCardInfo"></Box>
+            {/* <Box className="BoxCardInfo">
+              <Stack direction="row" spacing={2} className="InfoItems">
+                <span className="InfoHere">
+                  Phone Number 
+                  <span>
+                    {this.state.countryCode} {this.state.phoneNumber}
+                  </span>
+                </span>
+                <span className="InfoHere">
+                  Email: &nbsp;
+                  {this.state.email}
+                </span>
+                <span className="InfoHere">
+                  Passport 
+                  {this.state.passportNumber}
+                </span>
+                <span className="InfoHere">
+                  Medical Conditions
+                  {this.state.medicalConditions}
+                </span>
+                <span className="InfoHere">
+                  Card Number
+                  {this.state.cardNumber}
+                </span>
+              </Stack>
+            </Box> */}
           </div>
         </div>
       </div>

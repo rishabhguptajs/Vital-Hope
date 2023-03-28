@@ -132,3 +132,10 @@ body{
   cursor: pointer;
   scale: 1.04;
 }
+.UserInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
