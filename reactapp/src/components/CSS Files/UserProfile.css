@@ -139,4 +139,18 @@ body{
   top: -2.1em;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
 }
+.UpperData{
+  display:flex;
+  flex-direction: row;
+}
+.LowerData{
+  display:flex;
+  flex-direction: row;
+}
+.InfoHere{
+  display: flex;
+  flex-direction: column;
+} 
