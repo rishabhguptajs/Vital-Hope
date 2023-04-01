@@ -10,18 +10,6 @@ document.getElementById('hide-more').addEventListener('click', function() {
     document.getElementById('show-more').style.display = 'block';
 });
 
-document.querySelector('#symptom-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const symptoms = document.querySelectorAll('input[type=checkbox]:checked');
-    const symptomsArray = [];
-    symptoms.forEach(symptom => {
-        symptomsArray.push(symptom.value);
-    });
-    const symptomsString = symptomsArray.join(', ');
-    // document.getElementById('symp').innerHTML = symptomsString;
-    document.getElementById('symptom-form').style.display = 'none';
-    document.getElementById('results').style.display = 'block';
-}, false);
 const Cancers = [
     {name: "Bladder Cancer", symptoms: ["Blood in urine", "Painful urination", "Frequent urination", "Urgency to urinate", "Urinary incontinence", "Back pain", "Pelvic pain", "Fatigue", "Weight loss", "Bone pain", "Swelling in the feet"]},
     {name:"Breast Cancer", symptoms: ["Lump in breast tissue", "Nipple Discharge", "Breast/Nipple Pain", "Swelling near breast"]},
@@ -39,6 +27,7 @@ const Cancers = [
     {name:"Vaginal Cancer", symptoms: ["Abnormal vaginal bleeding", "Pelvic pain", "Pain during sexual intercourse", "Unusual vaginal discharge", "Fatigue", "Weight loss", "Swelling in one or both legs", "Loss of appetite"]},
     {name: "Colorectal Cancer", symptoms: ["Rectal bleeding or blood in stool", "Abdominal Pain","Unexplained weight loss", "Weakness or fatigue", "A change in bowel habits, such as diarrhea or constipation","Feeling like you need to have a bowel movement that is not relieved by doing so","Nausea or vomiting","Gas, bloating or a feeling of fullness in the abdomen","Rectal pain or a feeling of fullness in the rectum"]},
 ];
+
 
 const symptoms = [...new Set(Cancers.flatMap(cancer => cancer.symptoms))];
 
