@@ -325,6 +325,178 @@
 
 
 
+
+
+
+  <section class="bg-white flex ">
+    <div class=" self-center ">
+      <img src="image/contact.jpg" class="ml-[50%]" alt="">
+    </div>
+    <div id="drawer-contact"
+      class="fixed bottom-0 right-0 z-40  p-4 overflow-y-auto invisible transition-transform  bg-white w-80 dark:bg-gray-800"
+      tabindex="-1" aria-labelledby="drawer-contact-label">
+      <h5 id="drawer-label"
+        class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg
+          class="w-5 h-5 mr-2" aria-hidden="" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+            clip-rule="evenodd"></path>
+        </svg>Schedule Appointment</h5>
+      <button type="button" data-drawer-hide="" aria-controls="drawer-contact"
+        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+        <svg aria-hidden="" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+        <span class="sr-only">Close menu</span>
+      </button>
+      <form action="#" class="mb-6">
+        <div class="mb-6">
+          <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your contact
+            number</label>
+          <input type="tel" id="number"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="9241*****" required>
+        </div>
+        <div class="mb-6">
+          <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Slot</label>
+          <input type="date" id="subject"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="" required>
+          <label for="time" class="">Select a time period</label>
+          <select id="time"
+            class="bg-gray-50 border   border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            name="time">
+            <option value="9am-10am"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg--700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:text-cyan-400 "
+              selected>9am-10am</option>
+            <option value="10am-11am"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:text-cyan-400 "
+              selected>10am-11am</option>
+            <option value="11am-12am"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:text-cyan-400 "
+              selected>11am-12am</option>
+            <option value="2am-3am"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:text-cyan-400 "
+              selected>2am-3am</option>
+            <option value="3am-4am"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:text-cyan-400 "
+              selected>3am-4am</option>
+            <option value="4am-5am"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 hover:text-cyan-400 "
+              selected>4am-5am</option>
+          </select>
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">What symptoms are
+            you
+            experiencing?</label>
+          <textarea id="message" rows="4"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Your message..."></textarea>
+        </div>
+        <button type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Submit</button>
+      </form>
+      <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+        <a href="#" class="hover:underline">info@VitalHope.com</a>
+      </p>
+      <p class="text-sm text-gray-500 dark:text-gray-400">
+        <a href="#" class="hover:underline">212-456-7890</a>
+      </p>
+    </div>
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-700">Contact Us</h2>
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue?
+        Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+      <form action="#" class="space-y-8">
+
+
+
+
+      
+        <div class="flex justify-between">
+          <div class="flex ">
+            <label for="name" class="w-[123px] self-center text-sm font-medium text-gray-600">First Name :</label>
+            <input type="text" id="name"
+              class="shadow-sm bg-gray-50  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full px-2 pr-12 py-[12px]"
+              placeholder="name" required>
+          </div>
+          <div class="flex">
+            <label for="name" class="w-[123px] self-center text-sm font-medium text-gray-600">Last Name :</label>
+            <input type="email" id="email"
+              class="shadow-sm bg-gray-50  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full px-2 pr-12 py-[12px]"
+              placeholder="name@flowbite.com" required>
+          </div>
+        </div>
+        <div>
+          <label for="email" class="mb-2 text-sm font-medium text-gray-600">Your email</label>
+          <input type="email" id="email"
+            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+            placeholder="username@gamil.com" required>
+        </div>
+        <div class="flex justify-between">
+          <div class="flex">
+          <label for="subject" class=" mb-2 self-center pt-2 w-[40px] text-sm font-medium text-gray-600 ">Slot</label>
+          <input type="date" id="subject"
+            class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 "
+            placeholder="" required>
+          </div>
+          <div class="self-center flex">
+          <label for="time" class="w-[290px] self-center">Select a time period :</label>
+          <select id="time"
+            class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            name="time">
+            <option value="9am-10am"
+              class="bg-gray-50 border border-gray-300 text-gray-text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 hover:text-cyan-400 "
+              selected>9am-10am</option>
+            <option value="10am-11am"
+              class="bg-gray-50 border border-gray-300 text-gray-text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  hover:text-cyan-400 "
+              selected>10am-11am</option>
+            <option value="11am-12am"
+              class="bg-gray-50 border border-gray-300 text-gray-text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  hover:text-cyan-400 "
+              selected>11am-12am</option>
+            <option value="2am-3am"
+              class="bg-gray-50 border border-gray-300 text-gray-text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  hover:text-cyan-400 "
+              selected>2am-3am</option>
+            <option value="3am-4am"
+              class="bg-gray-50 border border-gray-300 text-gray-text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  hover:text-cyan-400 "
+              selected>3am-4am</option>
+            <option value="4am-5am"
+              class="bg-gray-50 border border-gray-300 text-gray-text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  hover:text-cyan-400 "
+              selected>4am-5am</option>
+          </select>
+        </div>
+        </div>
+        <!-- <div>
+          <label for="subject" class="block mb-2 text-sm font-medium text-gray-600">Subject</label>
+          <input type="text" id="subject"
+            class="block p-3 w-full text-sm text-gray-600 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
+            placeholder="Let us know how we can help you" required>
+        </div> -->
+        <div class="sm:col-span-2">
+          <label for="message" class="block mb-2 text-sm font-medium text-gray-600 ">What symptoms are you experiencing?</label>
+          <textarea id="message" rows="6"
+            class="block p-2.5 w-full text-sm text-gray-600 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
+            placeholder="Leave a comment..."></textarea>
+        </div>
+        <button type="submit"
+          class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+          message</button>
+      </form>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
   <section class="bg-white ">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
       <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
