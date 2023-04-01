@@ -1,0 +1,16 @@
+body{
+    background-color: #FFF;
+}
+.more_nav {
+    position: absolute;
+    left: -4rem;
+}
+
+.body {
+    position: absolute;
+    background-image: url("image/home-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-y:; */
+}
