@@ -28,9 +28,32 @@ const Cancers = [
     {name: "Colorectal Cancer", symptoms: ["Rectal bleeding or blood in stool", "Abdominal Pain","Unexplained weight loss", "Weakness or fatigue", "A change in bowel habits, such as diarrhea or constipation","Feeling like you need to have a bowel movement that is not relieved by doing so","Nausea or vomiting","Gas, bloating or a feeling of fullness in the abdomen","Rectal pain or a feeling of fullness in the rectum"]},
 ];
 
-
 const symptoms = [...new Set(Cancers.flatMap(cancer => cancer.symptoms))];
+const selectedSymptoms = [];
+const probableSymptoms = [];
 
-// function detectCancer(){
-//     if()
-// }
+function getSelectedSymptoms() {
+  const checkboxes = document.getElementsByName("symptom");
+  for (let i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      selectedSymptoms.add(checkboxes[i].value);
+    } else {
+      selectedSymptoms.delete(checkboxes[i].value);
+    }
+  }
+  console.log(selectedSymptoms);
+}
+
+function showSelectedSymptoms(){
+    for(let i=0; i<selectedSymptoms.length; i++){
+        if(selectedSymptoms[i]==Cancers[i].symptoms[i]){
+            selectedSymptoms.push(probableSymptoms[i]);
+        }
+    };
+    console.log("Symptoms");
+}
+
+function bothSelectedSymptoms(){
+    getSelectedSymptoms();
+    showSelectedSymptoms()
+}
